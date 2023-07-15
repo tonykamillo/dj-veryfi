@@ -125,6 +125,11 @@ STATIC_URL = "/static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
+MEDIA_ROOT = BASE_DIR.parent / "storage"
+
+if not Path(MEDIA_ROOT).exists():
+    Path(MEDIA_ROOT).mkdir()
+
 # Veryfi access settings
 VERYFI_CLIENT_ID = "vrfyx7zkphLVza3tBJnaFDm22KsKrtzKDv0cSr8"
 VERYFI_CLIENT_SECRET = "sMk4S6dfy9yuSu8ZM6Ztp7TU79JXvBdHgxyIuwTkIymyUFsNSHwS0OBivicXmO11B0D5MpsIR2UDPgVZA8wFFtbabJeJ0j3vaHpSxUtytOdVpNe5GEszw48xs6hSuS4a"
