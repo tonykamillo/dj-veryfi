@@ -27,10 +27,13 @@ When the field instance is acceesed after extraction it returns a ***OCRData*** 
  5. Install the requirements: `pip install -r requirements.txt`
  6. Create .env file and puth the Veryfi API credentials information like bellow:	 
 
-    VERYFI_CLIENT_ID = Your client id
-    VERYFI_CLIENT_SECRET = Your client secret
-    VERYFI_USERNAME = Your username
-    VERYFI_API_KEY = Your api key
+VERYFI_CLIENT_ID = Your client id
+
+VERYFI_CLIENT_SECRET = Your client secret
+
+VERYFI_USERNAME = Your username
+
+VERYFI_API_KEY = Your api key
 
  7. Run the migrations: `python manage.py migrate`
  8. Run the tests: `python manage.py test`
