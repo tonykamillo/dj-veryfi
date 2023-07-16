@@ -8,8 +8,11 @@ For now, it can auto OCR receipts or invoices documents by using ***dj_veryfi.fi
 ## Requirements
 
 > Python 3
+
 > Django >= 3.2.20 
+
 > Veryfi 3.3.0
+
 
 ## How it works
 Once you have defined a model field as ***dj_veryfi.fields.OCRInvoiceOrReceiptField***, you can assign a file-like instance to an instance model field of ***dj_veryfi.fields.OCRInvoiceOrReceiptField***, then, before saving the model, it gonna hit the Veryfi OCR API to extract information and persists it as JSON into datababse.
