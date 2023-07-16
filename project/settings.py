@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -131,7 +132,7 @@ if not Path(MEDIA_ROOT).exists():
     Path(MEDIA_ROOT).mkdir()
 
 # Veryfi access settings
-VERYFI_CLIENT_ID = "vrfyx7zkphLVza3tBJnaFDm22KsKrtzKDv0cSr8"
-VERYFI_CLIENT_SECRET = "sMk4S6dfy9yuSu8ZM6Ztp7TU79JXvBdHgxyIuwTkIymyUFsNSHwS0OBivicXmO11B0D5MpsIR2UDPgVZA8wFFtbabJeJ0j3vaHpSxUtytOdVpNe5GEszw48xs6hSuS4a"
-VERYFI_USERNAME = "tonykamillo"
-VERYFI_API_KEY = "92c3459a0052047d9e198f541d5cf075"
+VERYFI_CLIENT_ID = config("VERYFI_CLIENT_ID", default="")
+VERYFI_CLIENT_SECRET = config("VERYFI_CLIENT_SECRET", default="")
+VERYFI_USERNAME = config("VERYFI_USERNAME", default="")
+VERYFI_API_KEY = config("VERYFI_API_KEY", default="")
