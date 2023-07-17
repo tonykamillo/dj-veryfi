@@ -38,7 +38,7 @@ When the field instance is acceesed after extraction it returns a ***OCRData*** 
  7. Run the migrations: `python manage.py migrate`
  8. Run the tests: `python manage.py test`
 
-Now, you can play in django shell to play with or just take look at the source code in the ***dj_veryfi*** app.
+Now, you can play in django shell or just take look at the source code in the ***dj_veryfi*** app.
 
 ## Usage
 Once you have a django project, dj-veryfi installed and setedup, just declare your model field as ***dj_veryfi.fields.OCRInvoiceOrReceiptField***, as bellow.
