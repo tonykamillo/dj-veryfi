@@ -35,7 +35,7 @@ Add ***dj_veryfi*** into *INSTALLED_APPS* and set the *Veryfi API* authenticatio
 
 
 ## Usage
-Once you have a django project, dj-veryfi installed and setedup, just declare your model field as ***dj_veryfi.fields.OCRInvoiceOrReceiptField***, as bellow.
+Once you have a django project, dj-veryfi installed and set up, just declare your model field as ***dj_veryfi.fields.OCRInvoiceOrReceiptField***, as bellow.
    
     from django.db import models
     from dj_veryfi.fields import OCRInvoiceOrReceiptField
